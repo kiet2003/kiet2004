@@ -1,0 +1,300 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  position: relative;
+}
+header {
+  padding: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+header .header-right .header-right-tkk {
+  display: flex;
+  background-color: #f2f2f2;
+}
+header .header-right .header-right-tkk .search {
+  display: block;
+  padding: 6px 12px;
+  border-style: none;
+  border-left: 1px solid #216ac5;
+  font-size: 14px;
+  color: #6d747d;
+}
+header .header-right .header-right-tkk .search:focus {
+  outline: 0;
+}
+header .header-right .header-right-tkk .icon {
+  padding: 6px 12px;
+  background-color: #216ac5;
+  color: white;
+  border: none;
+}
+header .header-right .header-right-tkk .icon :hover {
+  cursor: pointer;
+}
+/* Hết header */
+.banner {
+  position: relative;
+  padding: 0px 100px;
+}
+.banner .banner-img {
+  background-image: url('../Images/thptlehoan.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.banner .dn {
+  position: absolute;
+  top: 1px;
+  right: 100px;
+  padding: 5px;
+}
+.banner .dn a {
+  color: #1a00f7;
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.banner .dn a:hover {
+  text-decoration: underline;
+}
+/* Hết Banner */
+nav {
+  padding: 0px 100px;
+  margin-top: 5px;
+  background-color: #216ac5;
+  height: 37px;
+}
+nav .fa-home {
+  font-size: 16px;
+}
+nav ul.menu {
+  position: absolute;
+  z-index: 10000;
+}
+nav ul.menu > li {
+  float: left;
+  position: relative;
+}
+nav ul.menu > li:hover .sub-menu {
+  display: block;
+}
+nav ul.menu > li > a {
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  line-height: 37px;
+  display: block;
+  padding: 0px 10px;
+}
+nav ul.menu > li > a:hover {
+  background-color: #f2f2f2;
+  color: #216ac5;
+  transition: 0.2s;
+}
+nav ul.sub-menu {
+  background-color: #216ac5;
+  width: 200px;
+  display: none;
+  position: absolute;
+}
+nav ul.sub-menu a {
+  display: block;
+  border-top: 2px solid white;
+  line-height: 37px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  color: black;
+  background-color: #f2f2f2;
+}
+nav ul.sub-menu a:hover {
+  color: white;
+  background-color: #216ac5;
+  transition: 0.2s;
+}
+/* Hết Menu */
+.silo {
+  margin: 0px 100px;
+  background-color: #f2f2f2;
+}
+.silo .text-silo {
+  position: relative;
+  top: 0px;
+  padding: 10px;
+}
+.silo .text-silo a {
+  padding: 0px 10px;
+  color: #6d747d;
+}
+.silo .text-silo a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+/* Hết chữa chạy dưới Menu */
+.container {
+  margin: 0px 100px;
+  min-height: 1250px;
+  display: flex;
+  /* Hết article*/
+}
+.container article {
+  flex-basis: 70%;
+  margin-right: 20px;
+}
+.container article .title {
+  margin-top: 10px;
+  display: flex;
+  border-bottom: 1px solid #216ac5;
+  padding-bottom: 5px;
+}
+.container article .title .title-left {
+  font-weight: bold;
+}
+.container article .title .title-left:hover {
+  text-decoration: underline;
+}
+.container article .hoidap {
+  padding-top: 10px;
+  text-align: justify;
+}
+.container article .hoidap img {
+  width: 40%;
+  border: 1px solid #6d747d;
+  margin-bottom: 20px;
+  margin-left: 30%;
+}
+.container article .hoidap .anhqs {
+  background-color: #6c3;
+  color: #fff;
+  padding: 5px;
+  font-weight: 700;
+  margin: 15px 0;
+  font-size: 15px;
+  color: white;
+}
+.container article .item2 {
+  flex-basis: 50%;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+.container article .item2 .form {
+  padding-top: 10PX;
+}
+.container article .item2 .form .form-text {
+  margin-bottom: 20px;
+}
+.container article .item2 .form .form-text .form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container article .item2 .form .form-text .form-control .contact-content {
+  height: auto;
+}
+.container article .item2 .form .form-text input:focus,
+.container article .item2 .form .form-text textarea:focus {
+  box-sizing: border-box;
+  border: 1px solid #e9d8f4;
+  -webkit-transition: 0.2s;
+  transition: 0.5s;
+  outline: none;
+  background-color: yellow;
+}
+.container article .btn {
+  float: right;
+  padding: 10px;
+}
+.container article .btn .btn-submit {
+  padding: 10px 20px;
+  background-color: #de381d;
+  border-color: #c33119;
+  color: #fff;
+  border-radius: 10px;
+}
+.container article .btn .btn-submit:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.container aside {
+  flex-basis: 27%;
+}
+.container aside a {
+  color: #333;
+  font-size: 12px;
+}
+.container aside a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+.container aside .anh img {
+  width: 100%;
+}
+.container aside .tieude {
+  font-weight: bold;
+  background-color: #f5f5f5;
+  color: #186bcc;
+  padding: 8px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #186bcc;
+}
+.container aside .heading {
+  background-color: #f5f5f5;
+  padding: 5px;
+}
+.container aside .heading .hehe {
+  position: relative;
+  top: -20px;
+  right: -10px;
+}
+.container aside .tintuc {
+  padding-top: 10px;
+  font-size: 12px;
+}
+.container aside .tintuc .tin {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  text-align: justify;
+}
+.container aside .tintuc img {
+  padding: 0px 5px;
+  width: 40%;
+}
+/* Hết Container */
+footer {
+  margin: 0px 100px;
+  border-top: 2px solid #216ac5;
+  position: relative;
+}
+footer > img {
+  padding: 20px;
+  margin-right: 20px;
+  width: 10%;
+}
+footer .item-text {
+  margin-top: 25px;
+  font-size: 15px;
+}
+footer .item-text p {
+  margin-top: 10px;
+}
+
+/* Hết*/
